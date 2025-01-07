@@ -14,6 +14,10 @@ This Python script organizes files in a specified directory into categorized fol
 - The script automatically creates folders corresponding to the categories if they do not already exist.
 - Files are moved to the appropriate folders based on their extensions.
 
+**How does it look like afte sorting**
+- ![obrazek](https://github.com/user-attachments/assets/bbfc5f40-bee8-48df-b771-1490e5cc6073)
+
+
 ### Universal Handling
 - Files with extensions not defined in `FILE_CATEGORIES` are moved to the `Others` folder.
 
