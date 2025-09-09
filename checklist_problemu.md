@@ -45,6 +45,3 @@
 
 ---
 
-
-
-Pokud chceš, můžu ti připravit **verzi tohoto checklistu s příkazy, které stačí jen kopírovat a spouštět**, aby to bylo opravdu praktické pro servisování serveru. Chceš, abych to udělal?
