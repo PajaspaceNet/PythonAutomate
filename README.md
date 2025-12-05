@@ -13,7 +13,7 @@ Automatization the boring staff :-) <br />
 * **`psutil`** – získávání informací o procesech, CPU, paměti, diskových a síťových statistikách.
 * **`shutil`** – kopírování, mazání a manipulace se soubory/složkami.
 * **`re`**  - Modul re poskytuje práci s regulárními výrazy, což jsou vzory pro vyhledávání, filtrování a manipulaci s textem.<br>
-V automatizaci se používají při extrakci dat, parsování logů, validaci vstupů nebo úpravách konfiguračních souborů.
+V automatizaci se používají při extrakci dat, parsování logů, validaci vstupů nebo úpravách konfiguračních souborů.  ![Podrobneji o knihovne re zde ](https://github.com/PajaspaceNet/PythonAutomate/blob/main/knihovny_podrobne/re.md)
 
 ---
 
