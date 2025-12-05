@@ -12,6 +12,8 @@ Automatization the boring staff :-) <br />
 * **`os` a `subprocess`** (standardní knihovna) – spouštění příkazů, práce se soubory, procesy.
 * **`psutil`** – získávání informací o procesech, CPU, paměti, diskových a síťových statistikách.
 * **`shutil`** – kopírování, mazání a manipulace se soubory/složkami.
+* **`re`**  - Modul re poskytuje práci s regulárními výrazy, což jsou vzory pro vyhledávání, filtrování a manipulaci s textem.<br>
+V automatizaci se používají při extrakci dat, parsování logů, validaci vstupů nebo úpravách konfiguračních souborů.
 
 ---
 
