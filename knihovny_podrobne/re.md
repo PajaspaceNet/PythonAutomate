@@ -156,6 +156,174 @@ if match:
 ```
 
 
+# ⭐ 1) Najít první výskyt vzoru (`re.search`)
+
+```python
+import re
+
+text = "Objednavka cislo 984 byla prijata."
+
+match = re.search(r"\d+", text)
+if match:
+    print("Nalezeno číslo:", match.group())
+```
+
+➡️ Výsledek: `984`
+
+---
+
+# ⭐ 2) Najít všechna čísla (`re.findall`)
+
+```python
+import re
+
+text = "Ceny: 150, 299, 450."
+
+numbers = re.findall(r"\d+", text)
+print(numbers)
+```
+
+➡️ `['150', '299', '450']`
+
+---
+
+# ⭐ 3) Validovat formát e-mailu (`re.fullmatch`)
+
+```python
+email = "user.name@example.com"
+
+if re.fullmatch(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}", email):
+    print("Email OK")
+else:
+    print("Neplatny email")
+```
+
+---
+
+# ⭐ 4) Nahradit mezery podtržítky (`re.sub`)
+
+```python
+text = "ahoj jak se mas"
+converted = re.sub(r"\s+", "_", text)
+
+print(converted)
+```
+
+➡️ `ahoj_jak_se_mas`
+
+---
+
+# ⭐ 5) Rozdělit text podle více oddělovačů (`re.split`)
+
+```python
+text = "jablko;hruska,merunka|kiwi"
+parts = re.split(r"[;,|]", text)
+
+print(parts)
+```
+
+➡️ `['jablko', 'hruska', 'merunka', 'kiwi']`
+
+---
+
+# ⭐ 6) Extrakce hodnot z logu (super pro automatizaci)
+
+```python
+log = "ERROR 500: Internal server failure at 12:45"
+
+match = re.search(r"ERROR (\d+): (.+)", log)
+if match:
+    code = match.group(1)
+    message = match.group(2)
+
+    print("Kód chyby:", code)
+    print("Zpráva:", message)
+```
+
+---
+
+# ⭐ 7) Najít telefonní čísla
+
+```python
+text = "Moje cisla: +420777888999 a 603123456."
+
+phones = re.findall(r"\+?\d{9,12}", text)
+print(phones)
+```
+
+---
+
+# ⭐ 8) Odstranit všechny speciální znaky
+
+```python
+text = "Nazev@Souboru#$%.txt"
+clean = re.sub(r"[^a-zA-Z0-9._-]", "", text)
+
+print(clean)
+```
+
+➡️ `NazevSouboru.txt`
+
+---
+
+# ⭐ 9) Získat hodnotu z konfiguráku
+
+```python
+config = "timeout=1500ms"
+
+match = re.search(r"timeout=(\d+)ms", config)
+if match:
+    timeout_value = int(match.group(1))
+    print("timeout:", timeout_value)
+```
+
+---
+
+# ⭐ 10) Zachytit skupiny (multiple groups)
+
+```python
+text = "Jmeno: Jan | Vek: 34 | Mesto: Brno"
+
+match = re.search(r"Jmeno:\s*(\w+).*Vek:\s*(\d+).*Mesto:\s*(\w+)", text)
+
+if match:
+    name = match.group(1)
+    age  = match.group(2)
+    city = match.group(3)
+
+    print(name, age, city)
+```
+
+---
+
+# ⭐ 11) Použití `re.compile()` pro rychlost (pokročilé)
+
+Pokud regex používáš opakovaně:
+
+```python
+pattern = re.compile(r"\d{3}-\d{2}-\d{4}")
+
+for line in data:
+    if pattern.search(line):
+        print("Nalezen vzor:", line)
+```
+
+---
+
+# ⭐ 12) Negativní lookahead (pokročilý příklad)
+
+Najdi číslo, které **není** následováno slovem „kg“.
+
+```python
+re.findall(r"\d+(?!\s*kg)", "10 kg, 20, 30 kg, 40")
+```
+
+➡️ `['20', '40']`
+
+---
+
+
+
 
 
 
