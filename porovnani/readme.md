@@ -22,6 +22,6 @@ Projekt slouží jako rychlá pomůcka pro validaci síťových konfigurací či
 ## porovnej text -
 Porovna text v souboruA a souboruB ... a vsechno **co je v A MUSI byt v B** pokud neni vypise co.
 
-Obecne k zverejnenym skriptum</br>
+### Obecne k zverejnenym skriptum</br>
 Výsledek se zobrazí přehledně na obrazovce a lze jej snadno zkopírovat či uložit.</br>
 Projekt slouží jako rychlá pomůcka pro validaci síťových konfigurací či audit IP seznamů</br>
